@@ -7,38 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="containerr">
-        <form action="">
-            <div>
-                <label for="Names">Names</label>
-                <input type="text" name="uname" id="uname">
-            </div>
-            <div>
-                <label for="Tin Number">Tin Number</label>
-                <input type="text" name="tnber" id="tnber">
-            </div>
-            <div>
-                <label for="Phone">Phone number</label>
-                <input type="number" name="nber" id="nber">
-            </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="Physical address">Physical address</label>
-                <input type="text" name="padd" id="padd">
-            </div>
-            <div>
-                <label for="country">country</label>
-                <select name="country" id="country_id">
-                    
-                </select>
-            </div>
-            <div>
-                <button type="button" id="subButton">Submit</button>
-            </div>
-        </form>
+    <div class=" mt-lg-4 container-lg">
+        <div class="form-container">
+            <h4 class="form-title">Supplier Registration</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="uname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter supplier name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="nber" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="nber" placeholder="e.g. 0781234567">
+                </div>
+
+                <div class="mb-3">
+                    <label for="country_id" class="form-label">Country</label>
+                    <select class="form-select" id="country_id">
+                        
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="padd" class="form-label">Physical Address</label>
+                    <input type="text" class="form-control" id="padd" placeholder="Enter address">
+                </div>
+
+                <div class="mb-3" id="tin_div" style="display: none;">
+                    <label for="tnber" class="form-label">TIN Number</label>
+                    <input type="text" class="form-control" id="tnber" placeholder="Enter TIN number">
+                </div>
+
+                <div class="d-grid">
+                    <button type="button" id="subButton" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="js/bootstrap/bootstrap.js"></script>

@@ -13,6 +13,17 @@ $(document).ready(function () {
         });
     }
 
+    $('#country_id').change(function(){
+        const selectedText = $("#country_id option:selected").text().toLowerCase();
+
+        if(selectedText.includes("rwanda")){
+            $('#tin_div').show();
+        } else {
+            $('#tin_div').hide();
+            $('#tnber').val(''); 
+        }
+    })
+
     $('#subButton').click(function () {
         const uname = $('#uname').val();
         const tnber = $('#tnber').val();
